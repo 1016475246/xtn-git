@@ -22,6 +22,7 @@ public class App {
         return new ActiveMQTopic("lanxin_topic");
     }
 
+    //这是SpringBoot启动Main方法
     public static void main(String[] args) {
         //这是一行注解
         SpringApplication.run(App.class, args);
