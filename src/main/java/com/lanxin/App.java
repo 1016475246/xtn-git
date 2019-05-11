@@ -11,18 +11,19 @@ import javax.jms.Topic;
 
 @SpringBootApplication
 public class App {
-    
+
     @Bean
-    public Queue queue(){
+    public Queue queue() {
         return new ActiveMQQueue("lanxin_queue");
     }
 
     @Bean
-    public Topic topic(){
+    public Topic topic() {
         return new ActiveMQTopic("lanxin_topic");
     }
-    
+
     public static void main(String[] args) {
+        //这是一行注解
         SpringApplication.run(App.class, args);
     }
 }
