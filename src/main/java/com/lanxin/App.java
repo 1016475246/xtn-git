@@ -25,5 +25,6 @@ public class App {
     public static void main(String[] args) {
         //这是一行注解
         SpringApplication.run(App.class, args);
+        //这是第二行注解
     }
 }
